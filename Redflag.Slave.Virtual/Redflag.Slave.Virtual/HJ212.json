@@ -1,0 +1,100 @@
+{
+  "ST": "21",
+  "PW": "123456",
+  "MN": "DXCBZ000000005",
+  "Flag": "5",
+  "ParamCodes": [
+    {
+      "ParamCode": "w01018",
+      "DefaultValue": 235,
+      "Max": 0.9,
+      "Min": 1.1,
+      "CouValue": false,
+      "DataFlag": "N",
+      "CstartTime": "000000",
+      "CTime": 2,
+      "Stime": 40,
+      "SN": "010000A8900016F000169DC1"
+    },
+    {
+      "ParamCode": "w21003",
+      "DefaultValue": 35,
+      "Max": 0.9,
+      "Min": 1.1,
+      "CouValue": false,
+      "DataFlag": "N",
+      "CstartTime": "000000",
+      "CTime": 2,
+      "Stime": 40,
+      "SN": "010000A8900016F000169DC2"
+    },
+    {
+      "ParamCode": "w21011",
+      "DefaultValue": 4.31,
+      "Max": 0.9,
+      "Min": 1.1,
+      "CouValue": false,
+      "DataFlag": "N",
+      "CstartTime": "000000",
+      "CTime": 2,
+      "Stime": 40,
+      "SN": "010000A8900016F000169DC3"
+    },
+    {
+      "ParamCode": "w21001",
+      "DefaultValue": 34,
+      "Max": 0.9,
+      "Min": 1.1,
+      "CouValue": false,
+      "DataFlag": "N",
+      "CstartTime": "000000",
+      "CTime": 2,
+      "Stime": 40,
+      "SN": "010000A8900016F000169DC4"
+    },
+    {
+      "ParamCode": "w01001",
+      "DefaultValue": 7.5,
+      "Max": 0.9,
+      "Min": 1.1,
+      "CouValue": false,
+      "DataFlag": "N",
+      "CstartTime": "000000",
+      "CTime": 2,
+      "Stime": 40,
+      "SN": "010000A8900016F000169DC5"
+    }
+  ],
+  "Devices": [
+    {
+      "DeviceNumber": 1,
+      "DeviceRunState": 1
+    },
+    {
+      "DeviceNumber": 2,
+      "DeviceRunState": 1
+    }
+  ],
+  "OverTime": 5,
+  "ReCount": 3,
+  "HeartBeat": false,
+  "HeartBeatInterval": 60,
+  "RtdData": true,
+  "RtdInterval": 60,
+  "MinuteData": false,
+  "MinInterval": 10,
+  "HourData": false,
+  "HourDataDelay": 5,
+  "CycleData": false,
+  "CycleInterval": 4,
+  "CycleDataDelay": 5,
+  "DayData": false,
+  "DayDataDelay": 5,
+  "DeviceRunState": false,
+  "DeviceStateInterval": 300,
+  "CheckCRC": false,
+  "VaseNo": 1,
+  "MessageInterval": 500,
+  "RestartTime": true,
+  "SceneDeviceTimeCalibration": false
+}

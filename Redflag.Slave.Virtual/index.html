@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>服务模拟</title>
+    <style>
+        .kuang{text-align: center;margin-top:200px;}
+        #mess{text-align: center}
+        .value{width: 200px;height:200px;border:1px solid;text-align: center;line-height: 200px;display: inline-block;}
+    </style>
+</head>
+<body>
+    <div class="kuang">
+        地址:<input type="text" id="ip" style="width:800px" value='172.16.0.201'/><br/>
+        端口号:<input type="text" id="port" style="width:800px" value='8400'/><br/>
+        mn:<input type="text" id="mn" style="width:800px" value='DXCBZ000000005'/><br/>
+        cn:<input type="text" id="cn" style="width:800px" /><br/>
+        flag:<input type="text" id="flag" style="width:800px" value='5'/><br/>
+        cp:<input type="text" id="cp" style="width:800px" /><br/>
+        pw:<input type="text" id="cp" style="width:800px" value='123456'/><br/>
+        接收内容:<textarea id="accept" rows="50" style="width:800px"></textarea><br/>
+        <input type="button" onclick="send()" value="发 送">
+        <input type="button" onclick="connect()" value="连 接">
+        
+    </div>
+
+    <script>
+        var ws;
+        function connect(){
+            ws = new WebSocket('ws://'+document.getElementById('ip').value+':'+document.getElementById('port').value);
+            ws.onopen = function(e){
+                document.getElementById('accept').value+='连接服务器成功'+ '\r\n';
+            }
+            ws.onclose = function(e){
+                document.getElementById('accept').value+='服务器关闭'+ '\r\n';
+            }
+            ws.onerror = function(){
+                document.getElementById('accept').value+='连接出错'+ '\r\n';
+            }
+            ws.onmessage = function(e){
+                document.getElementById('accept').value+= '接收数据：'+ e.data + '\r\n';
+            }
+        }
+
+        function send(){
+            var mn = document.getElementById('mn').value;
+            var cn = document.getElementById('cn').value;
+            var flag = document.getElementById('flag').value;
+            var cp = document.getElementById('cp').value;
+            var pw = document.getElementById('cp').value;
+            var content = 'QN='+ new Date().getTime() + 'ST=21;CN='+cn+';PW='+pw+';MN='+mn+';Flag='+flag+';CP=&&'+cp+'&&';
+            var len = content.length.toString()
+            while(len.length<4){
+                len='0'+len;
+            }
+            var crc =crc16(content);
+            var command = '##'+len+content+crc+'\r\n';
+            var j = JSON.stringify({
+                CmdId :guid(),
+                SampleMn :mn,
+                CmdStartTime :new Date(),
+                CmdType :cn,
+                CmdContent :command
+            })
+            document.getElementById('accept').value+= '发送数据：'+ j + '\r\n';
+            ws.send(j)
+        }
+
+        function crc16(str){
+           
+            return '0000';
+        }
+
+        function guid() { 
+            return S4()+S4()+"-"+S4()+"-"+S4()+"-"+S4()+"-"+S4()+S4()+S4(); 
+        };
+
+        function S4() { 
+            return (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
+        }; 
+       
+
+    </script>
+</body>
+</html>

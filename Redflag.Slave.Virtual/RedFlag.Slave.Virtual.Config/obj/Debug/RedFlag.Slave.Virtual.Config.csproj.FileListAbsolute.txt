@@ -1,0 +1,6 @@
+F:\git\Redflag.Slave.Virtual\RedFlag.Slave.Virtual.Config\bin\Debug\RedFlag.Slave.Virtual.Config.dll
+F:\git\Redflag.Slave.Virtual\RedFlag.Slave.Virtual.Config\bin\Debug\RedFlag.Slave.Virtual.Config.pdb
+F:\git\Redflag.Slave.Virtual\RedFlag.Slave.Virtual.Config\obj\Debug\RedFlag.Slave.Virtual.Config.csprojAssemblyReference.cache
+F:\git\Redflag.Slave.Virtual\RedFlag.Slave.Virtual.Config\obj\Debug\RedFlag.Slave.Virtual.Config.csproj.CoreCompileInputs.cache
+F:\git\Redflag.Slave.Virtual\RedFlag.Slave.Virtual.Config\obj\Debug\RedFlag.Slave.Virtual.Config.dll
+F:\git\Redflag.Slave.Virtual\RedFlag.Slave.Virtual.Config\obj\Debug\RedFlag.Slave.Virtual.Config.pdb

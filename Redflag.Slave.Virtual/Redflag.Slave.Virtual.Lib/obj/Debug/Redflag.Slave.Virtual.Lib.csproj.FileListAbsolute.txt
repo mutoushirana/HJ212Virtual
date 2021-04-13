@@ -1,0 +1,9 @@
+F:\git\Redflag.Slave.Virtual\Redflag.Slave.Virtual.Lib\bin\Debug\Redflag.Slave.Virtual.Lib.dll
+F:\git\Redflag.Slave.Virtual\Redflag.Slave.Virtual.Lib\bin\Debug\Redflag.Slave.Virtual.Lib.pdb
+F:\git\Redflag.Slave.Virtual\Redflag.Slave.Virtual.Lib\obj\Debug\Redflag.Slave.Virtual.Lib.csproj.CoreCompileInputs.cache
+F:\git\Redflag.Slave.Virtual\Redflag.Slave.Virtual.Lib\obj\Debug\Redflag.Slave.Virtual.Lib.dll
+F:\git\Redflag.Slave.Virtual\Redflag.Slave.Virtual.Lib\obj\Debug\Redflag.Slave.Virtual.Lib.pdb
+F:\git\Redflag.Slave.Virtual\Redflag.Slave.Virtual.Lib\obj\Debug\Redflag.Slave.Virtual.Lib.csprojAssemblyReference.cache
+F:\git\Redflag.Slave.Virtual\Redflag.Slave.Virtual.Lib\bin\Debug\Newtonsoft.Json.dll
+F:\git\Redflag.Slave.Virtual\Redflag.Slave.Virtual.Lib\bin\Debug\Newtonsoft.Json.xml
+F:\git\Redflag.Slave.Virtual\Redflag.Slave.Virtual.Lib\obj\Debug\Redflag.Slave.Virtual.Lib.csproj.CopyComplete
